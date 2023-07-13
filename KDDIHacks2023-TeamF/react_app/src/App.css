@@ -1,0 +1,150 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.block2 {
+  display: flex;
+  flex-direction: column;
+  background-color: #ebebeb;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  max-height: 90vh;
+  margin-top: 70px;
+}
+
+#video {
+  width: 600px;
+  max-height: 500px;
+}
+
+#picture {
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+  height: 90vh;
+}
+
+#picture > div {
+  flex: 1 50%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+#canvas {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #picture > div {
+    flex-basis: 100%;
+  }
+}
+
+#photo {
+  display: none;
+}
+
+table {
+  margin: 10px;
+}
+
+tr {
+}
+
+.photo {
+  width: 50%;
+}
+
+
+#videoDiv{
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,.1);
+  margin-top: 20px;
+}
+
+.heading07 {
+	position: relative;
+  margin: 10px;
+	padding-top: 50px;
+	padding-left: 30px;
+	font-size: 1rem;
+}
+
+.heading07 span {
+	position: relative;
+	z-index: 2;
+}
+
+.heading07::before {
+	content: attr(data-en);
+	position: absolute;
+	transform: rotate(-3deg);
+	top: 0px;
+	left: 0;
+	color: #61dafb;
+	font-size: 4rem;
+	font-weight: 400;
+	font-family: luxus-brut, cursive;
+	font-style: italic;
+}
+
+
+.fadeUp {
+animation-name: fadeUpAnime;/*アニメーションの定義名*/
+animation-duration:1s;/*アニメーション変化時間 ※デフォルト*/
+animation-fill-mode:forwards;/*アニメーションの開始と終了時の状態を指定*/
+opacity:0;
+}
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(100px);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+.change-time05{
+  animation-duration: 1.5s;
+}
